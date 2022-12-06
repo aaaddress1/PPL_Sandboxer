@@ -144,7 +144,7 @@ BOOL SetPrivilege(
     if (bEnablePrivilege)
         tp.Privileges[0].Attributes = SE_PRIVILEGE_REMOVED;
     else
-        tp.Privileges[0].Attributes = SE_PRIVILEGE_REMOVED;
+        tp.Privileges[0].Attributes = SE_PRIVILEGE_ENABLED;
 
     // Enable the privilege or disable all privileges.
     NTSTATUS status = 0;
